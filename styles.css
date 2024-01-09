@@ -1,0 +1,48 @@
+* {
+    border: 0;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --label-icon: url("./assets/labellua.png");
+}
+
+.dark-mode {
+    --bg-color: linear-gradient(180deg, #8C52FF, #5E17EB);
+    --label-icon: url("./assets/labelsol.png");
+}
+
+body {
+    
+    margin-right: 95px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: var(--bg-color);
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    
+}
+
+
+.mudar-tema {
+    position: absolute;
+    cursor: pointer; 
+    background-image: var(--label-icon);
+    background-repeat: no-repeat;
+    width: 100px;
+    height: 100px; 
+    transition: 0.5s;
+}
+
+.dark-mode .mudar-tema {
+    background-image: var(--label-icon);
+}
+
